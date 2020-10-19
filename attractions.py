@@ -3,6 +3,10 @@ class Attraction:
       self.attraction_name = name
       self.description = description
       self.animals = list()
+  
+  @property
+  def last_animal_added(self):
+    return self.animals[-1]
 
   def __repr__(self):
     output = self.description + "\n"
