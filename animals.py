@@ -3,13 +3,22 @@
 from datetime import date
 
 class Donkey():
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, chip_num):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.area = 'petting area'
         self.walking = True
         self.shift = shift
+        self.__chip_number = chip_num
+
+    @property
+    def chip_number(self):
+        return self.__chip_number
+    
+    @chip_number.setter
+    def chip_number(self, number):
+        pass
 
     def __repr__(self):
         return f"{self.name} is a {self.species}"
