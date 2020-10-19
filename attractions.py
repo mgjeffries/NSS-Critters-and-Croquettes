@@ -4,4 +4,9 @@ class Attraction:
       self.description = description
       self.animals = list()
 
+  def __repr__(self):
+    output = self.description + "\n"
+    for animal in self.animals:
+      output += f"{animal.name} is a {animal.species} that can be found in the {self.attraction_name} \n"
+    return output
 

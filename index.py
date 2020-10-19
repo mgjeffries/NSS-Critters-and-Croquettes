@@ -8,5 +8,4 @@ aviary = Attraction("The Roost", "winged and clawed critters")
 varmint_village.animals.append( fred )
 varmint_village.animals.append( george )
 
-for animal in varmint_village.animals:
-  print(f"{animal.name} is a {animal.species} that can be found in the place")
+print(varmint_village)
