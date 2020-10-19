@@ -1,3 +1,5 @@
+#Critters and Croquettes
+
 from datetime import date
 
 class Donkey():
@@ -143,6 +145,6 @@ class Crawfish():
         self.swimming = True
         self.shift = shift
 
-roberto = Llama("Roberto", "alpaca", "midday")
-print(f'{roberto.name} the {roberto.species} is available to pet during the {roberto.shift} shift.')
-# prints Roberto the alpaca is available to pet during the midday shift.
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow" )
+
+print(miss_fuzz.feed())
