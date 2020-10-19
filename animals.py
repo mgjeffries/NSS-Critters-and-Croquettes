@@ -11,6 +11,8 @@ class Donkey():
         self.walking = True
         self.shift = shift
 
+    def __repr__(self):
+        return f"{self.name} is a {self.species}"
 
 class Llama():
     def __init__(self, name, species, shift):
@@ -145,6 +147,3 @@ class Crawfish():
         self.swimming = True
         self.shift = shift
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow" )
-
-print(miss_fuzz.feed())
